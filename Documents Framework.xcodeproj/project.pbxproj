@@ -7,13 +7,81 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E48233F01E7E6696DEBAC5B /* Pods_Documents_Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E9EB6523410C90DDE15112F /* Pods_Documents_Framework.framework */; };
 		706CF6C724AE1378001E73CE /* Documents_Framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 706CF6C524AE1378001E73CE /* Documents_Framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		706CF71024AE1472001E73CE /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706CF6E624AE1471001E73CE /* Date.swift */; };
+		706CF71124AE1472001E73CE /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706CF6E724AE1471001E73CE /* Sequence.swift */; };
+		706CF71224AE1472001E73CE /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706CF6E824AE1471001E73CE /* URL.swift */; };
+		706CF71324AE1472001E73CE /* Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706CF6E924AE1471001E73CE /* Bool.swift */; };
+		706CF71424AE1472001E73CE /* GeneralError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706CF6EC24AE1471001E73CE /* GeneralError.swift */; };
+		706CF71524AE1472001E73CE /* DocumentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706CF6ED24AE1471001E73CE /* DocumentType.swift */; };
+		706CF71624AE1472001E73CE /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706CF6EF24AE1471001E73CE /* Track.swift */; };
+		706CF71724AE1472001E73CE /* ErrorContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706CF6F024AE1471001E73CE /* ErrorContainer.swift */; };
+		706CF71824AE1472001E73CE /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706CF6F124AE1471001E73CE /* Consts.swift */; };
+		706CF71924AE1472001E73CE /* ReadWriteLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706CF6F224AE1471001E73CE /* ReadWriteLock.swift */; };
+		706CF71A24AE1472001E73CE /* Migrations.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 706CF6F424AE1471001E73CE /* Migrations.bundle */; };
+		706CF71B24AE1472001E73CE /* DocumentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706CF6F624AE1472001E73CE /* DocumentService.swift */; };
+		706CF71C24AE1472001E73CE /* TaskService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706CF6F724AE1472001E73CE /* TaskService.swift */; };
+		706CF71D24AE1472001E73CE /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706CF6F824AE1472001E73CE /* LocationService.swift */; };
+		706CF71E24AE1472001E73CE /* LogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706CF6F924AE1472001E73CE /* LogService.swift */; };
+		706CF71F24AE1472001E73CE /* LocalStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706CF6FB24AE1472001E73CE /* LocalStorageService.swift */; };
+		706CF72024AE1472001E73CE /* SettingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706CF6FC24AE1472001E73CE /* SettingService.swift */; };
+		706CF72124AE1472001E73CE /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706CF6FD24AE1472001E73CE /* FileService.swift */; };
+		706CF72224AE1472001E73CE /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706CF6FF24AE1472001E73CE /* Location.swift */; };
+		706CF72324AE1472001E73CE /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706CF70024AE1472001E73CE /* Setting.swift */; };
+		706CF72424AE1472001E73CE /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706CF70124AE1472001E73CE /* Log.swift */; };
+		706CF72524AE1472001E73CE /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706CF70224AE1472001E73CE /* Section.swift */; };
+		706CF72624AE1472001E73CE /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706CF70324AE1472001E73CE /* Document.swift */; };
+		706CF72724AE1472001E73CE /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706CF70424AE1472001E73CE /* Task.swift */; };
+		706CF72824AE1472001E73CE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706CF70624AE1472001E73CE /* NetworkManager.swift */; };
+		706CF72924AE1472001E73CE /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706CF70724AE1472001E73CE /* HttpClient.swift */; };
+		706CF72A24AE1472001E73CE /* SQLiteMigrationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706CF70924AE1472001E73CE /* SQLiteMigrationManager.swift */; };
+		706CF72B24AE1472001E73CE /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706CF70A24AE1472001E73CE /* Database.swift */; };
+		706CF72C24AE1472001E73CE /* DocumentDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706CF70C24AE1472001E73CE /* DocumentDao.swift */; };
+		706CF72D24AE1472001E73CE /* LocationDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706CF70D24AE1472001E73CE /* LocationDao.swift */; };
+		706CF72E24AE1472001E73CE /* LogDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706CF70E24AE1472001E73CE /* LogDao.swift */; };
+		706CF72F24AE1472001E73CE /* TaskDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706CF70F24AE1472001E73CE /* TaskDao.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		513883529C71C82C2423B16D /* Pods-Documents Framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Documents Framework.release.xcconfig"; path = "Target Support Files/Pods-Documents Framework/Pods-Documents Framework.release.xcconfig"; sourceTree = "<group>"; };
 		706CF6C224AE1378001E73CE /* Documents_Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Documents_Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		706CF6C524AE1378001E73CE /* Documents_Framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Documents_Framework.h; sourceTree = "<group>"; };
 		706CF6C624AE1378001E73CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		706CF6E624AE1471001E73CE /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		706CF6E724AE1471001E73CE /* Sequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
+		706CF6E824AE1471001E73CE /* URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		706CF6E924AE1471001E73CE /* Bool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bool.swift; sourceTree = "<group>"; };
+		706CF6EC24AE1471001E73CE /* GeneralError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralError.swift; sourceTree = "<group>"; };
+		706CF6ED24AE1471001E73CE /* DocumentType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentType.swift; sourceTree = "<group>"; };
+		706CF6EF24AE1471001E73CE /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		706CF6F024AE1471001E73CE /* ErrorContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorContainer.swift; sourceTree = "<group>"; };
+		706CF6F124AE1471001E73CE /* Consts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
+		706CF6F224AE1471001E73CE /* ReadWriteLock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadWriteLock.swift; sourceTree = "<group>"; };
+		706CF6F424AE1471001E73CE /* Migrations.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Migrations.bundle; sourceTree = "<group>"; };
+		706CF6F624AE1472001E73CE /* DocumentService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentService.swift; sourceTree = "<group>"; };
+		706CF6F724AE1472001E73CE /* TaskService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskService.swift; sourceTree = "<group>"; };
+		706CF6F824AE1472001E73CE /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		706CF6F924AE1472001E73CE /* LogService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogService.swift; sourceTree = "<group>"; };
+		706CF6FB24AE1472001E73CE /* LocalStorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStorageService.swift; sourceTree = "<group>"; };
+		706CF6FC24AE1472001E73CE /* SettingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingService.swift; sourceTree = "<group>"; };
+		706CF6FD24AE1472001E73CE /* FileService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
+		706CF6FF24AE1472001E73CE /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		706CF70024AE1472001E73CE /* Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		706CF70124AE1472001E73CE /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		706CF70224AE1472001E73CE /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		706CF70324AE1472001E73CE /* Document.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		706CF70424AE1472001E73CE /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		706CF70624AE1472001E73CE /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		706CF70724AE1472001E73CE /* HttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		706CF70924AE1472001E73CE /* SQLiteMigrationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteMigrationManager.swift; sourceTree = "<group>"; };
+		706CF70A24AE1472001E73CE /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		706CF70C24AE1472001E73CE /* DocumentDao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentDao.swift; sourceTree = "<group>"; };
+		706CF70D24AE1472001E73CE /* LocationDao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDao.swift; sourceTree = "<group>"; };
+		706CF70E24AE1472001E73CE /* LogDao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogDao.swift; sourceTree = "<group>"; };
+		706CF70F24AE1472001E73CE /* TaskDao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDao.swift; sourceTree = "<group>"; };
+		8E9EB6523410C90DDE15112F /* Pods_Documents_Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Documents_Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE4D8AA807E28C5B243C78B2 /* Pods-Documents Framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Documents Framework.debug.xcconfig"; path = "Target Support Files/Pods-Documents Framework/Pods-Documents Framework.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +89,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E48233F01E7E6696DEBAC5B /* Pods_Documents_Framework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E85A0D8B604A3CCF67D2791 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E9EB6523410C90DDE15112F /* Pods_Documents_Framework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		706CF6B824AE1378001E73CE = {
 			isa = PBXGroup;
 			children = (
 				706CF6C424AE1378001E73CE /* Documents Framework */,
 				706CF6C324AE1378001E73CE /* Products */,
+				AD4EA2DE60E9504B904F7F0C /* Pods */,
+				0E85A0D8B604A3CCF67D2791 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +125,149 @@
 		706CF6C424AE1378001E73CE /* Documents Framework */ = {
 			isa = PBXGroup;
 			children = (
+				706CF6F524AE1472001E73CE /* Dao Services */,
+				706CF70B24AE1472001E73CE /* Daos */,
+				706CF70824AE1472001E73CE /* Database */,
+				706CF6EB24AE1471001E73CE /* Enums */,
+				706CF6E524AE1471001E73CE /* Extensions */,
+				706CF6F324AE1471001E73CE /* Migration Files */,
+				706CF6FE24AE1472001E73CE /* Models */,
+				706CF70524AE1472001E73CE /* Networking */,
+				706CF6FA24AE1472001E73CE /* Supporting Services */,
+				706CF6EE24AE1471001E73CE /* Utilities */,
+				706CF6CE24AE140E001E73CE /* Supporting Files */,
+			);
+			path = "Documents Framework";
+			sourceTree = "<group>";
+		};
+		706CF6CE24AE140E001E73CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				706CF6C524AE1378001E73CE /* Documents_Framework.h */,
 				706CF6C624AE1378001E73CE /* Info.plist */,
 			);
-			path = "Documents Framework";
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		706CF6E524AE1471001E73CE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				706CF6E624AE1471001E73CE /* Date.swift */,
+				706CF6E724AE1471001E73CE /* Sequence.swift */,
+				706CF6E824AE1471001E73CE /* URL.swift */,
+				706CF6E924AE1471001E73CE /* Bool.swift */,
+			);
+			name = Extensions;
+			path = "../../POD Offline iOS Framework - github/POD Files/Extensions";
+			sourceTree = "<group>";
+		};
+		706CF6EB24AE1471001E73CE /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				706CF6EC24AE1471001E73CE /* GeneralError.swift */,
+				706CF6ED24AE1471001E73CE /* DocumentType.swift */,
+			);
+			name = Enums;
+			path = "../../POD Offline iOS Framework - github/POD Files/Enums";
+			sourceTree = "<group>";
+		};
+		706CF6EE24AE1471001E73CE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				706CF6EF24AE1471001E73CE /* Track.swift */,
+				706CF6F024AE1471001E73CE /* ErrorContainer.swift */,
+				706CF6F124AE1471001E73CE /* Consts.swift */,
+				706CF6F224AE1471001E73CE /* ReadWriteLock.swift */,
+			);
+			name = Utilities;
+			path = "../../POD Offline iOS Framework - github/POD Files/Utilities";
+			sourceTree = "<group>";
+		};
+		706CF6F324AE1471001E73CE /* Migration Files */ = {
+			isa = PBXGroup;
+			children = (
+				706CF6F424AE1471001E73CE /* Migrations.bundle */,
+			);
+			name = "Migration Files";
+			path = "../../POD Offline iOS Framework - github/POD Files/Migration Files";
+			sourceTree = "<group>";
+		};
+		706CF6F524AE1472001E73CE /* Dao Services */ = {
+			isa = PBXGroup;
+			children = (
+				706CF6F624AE1472001E73CE /* DocumentService.swift */,
+				706CF6F724AE1472001E73CE /* TaskService.swift */,
+				706CF6F824AE1472001E73CE /* LocationService.swift */,
+				706CF6F924AE1472001E73CE /* LogService.swift */,
+			);
+			name = "Dao Services";
+			path = "../../POD Offline iOS Framework - github/POD Files/Dao Services";
+			sourceTree = "<group>";
+		};
+		706CF6FA24AE1472001E73CE /* Supporting Services */ = {
+			isa = PBXGroup;
+			children = (
+				706CF6FB24AE1472001E73CE /* LocalStorageService.swift */,
+				706CF6FC24AE1472001E73CE /* SettingService.swift */,
+				706CF6FD24AE1472001E73CE /* FileService.swift */,
+			);
+			name = "Supporting Services";
+			path = "../../POD Offline iOS Framework - github/POD Files/Supporting Services";
+			sourceTree = "<group>";
+		};
+		706CF6FE24AE1472001E73CE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				706CF6FF24AE1472001E73CE /* Location.swift */,
+				706CF70024AE1472001E73CE /* Setting.swift */,
+				706CF70124AE1472001E73CE /* Log.swift */,
+				706CF70224AE1472001E73CE /* Section.swift */,
+				706CF70324AE1472001E73CE /* Document.swift */,
+				706CF70424AE1472001E73CE /* Task.swift */,
+			);
+			name = Models;
+			path = "../../POD Offline iOS Framework - github/POD Files/Models";
+			sourceTree = "<group>";
+		};
+		706CF70524AE1472001E73CE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				706CF70624AE1472001E73CE /* NetworkManager.swift */,
+				706CF70724AE1472001E73CE /* HttpClient.swift */,
+			);
+			name = Networking;
+			path = "../../POD Offline iOS Framework - github/POD Files/Networking";
+			sourceTree = "<group>";
+		};
+		706CF70824AE1472001E73CE /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				706CF70924AE1472001E73CE /* SQLiteMigrationManager.swift */,
+				706CF70A24AE1472001E73CE /* Database.swift */,
+			);
+			name = Database;
+			path = "../../POD Offline iOS Framework - github/POD Files/Database";
+			sourceTree = "<group>";
+		};
+		706CF70B24AE1472001E73CE /* Daos */ = {
+			isa = PBXGroup;
+			children = (
+				706CF70C24AE1472001E73CE /* DocumentDao.swift */,
+				706CF70D24AE1472001E73CE /* LocationDao.swift */,
+				706CF70E24AE1472001E73CE /* LogDao.swift */,
+				706CF70F24AE1472001E73CE /* TaskDao.swift */,
+			);
+			name = Daos;
+			path = "../../POD Offline iOS Framework - github/POD Files/Daos";
+			sourceTree = "<group>";
+		};
+		AD4EA2DE60E9504B904F7F0C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE4D8AA807E28C5B243C78B2 /* Pods-Documents Framework.debug.xcconfig */,
+				513883529C71C82C2423B16D /* Pods-Documents Framework.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,6 +288,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 706CF6CA24AE1378001E73CE /* Build configuration list for PBXNativeTarget "Documents Framework" */;
 			buildPhases = (
+				07E9562E1B3C993ECC2CD48D /* [CP] Check Pods Manifest.lock */,
 				706CF6BD24AE1378001E73CE /* Headers */,
 				706CF6BE24AE1378001E73CE /* Sources */,
 				706CF6BF24AE1378001E73CE /* Frameworks */,
@@ -121,16 +340,73 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				706CF71A24AE1472001E73CE /* Migrations.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07E9562E1B3C993ECC2CD48D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Documents Framework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		706CF6BE24AE1378001E73CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				706CF72D24AE1472001E73CE /* LocationDao.swift in Sources */,
+				706CF72E24AE1472001E73CE /* LogDao.swift in Sources */,
+				706CF72A24AE1472001E73CE /* SQLiteMigrationManager.swift in Sources */,
+				706CF71524AE1472001E73CE /* DocumentType.swift in Sources */,
+				706CF71124AE1472001E73CE /* Sequence.swift in Sources */,
+				706CF72424AE1472001E73CE /* Log.swift in Sources */,
+				706CF72524AE1472001E73CE /* Section.swift in Sources */,
+				706CF72724AE1472001E73CE /* Task.swift in Sources */,
+				706CF72624AE1472001E73CE /* Document.swift in Sources */,
+				706CF72C24AE1472001E73CE /* DocumentDao.swift in Sources */,
+				706CF71B24AE1472001E73CE /* DocumentService.swift in Sources */,
+				706CF71424AE1472001E73CE /* GeneralError.swift in Sources */,
+				706CF72224AE1472001E73CE /* Location.swift in Sources */,
+				706CF71324AE1472001E73CE /* Bool.swift in Sources */,
+				706CF72F24AE1472001E73CE /* TaskDao.swift in Sources */,
+				706CF71924AE1472001E73CE /* ReadWriteLock.swift in Sources */,
+				706CF71724AE1472001E73CE /* ErrorContainer.swift in Sources */,
+				706CF72124AE1472001E73CE /* FileService.swift in Sources */,
+				706CF71024AE1472001E73CE /* Date.swift in Sources */,
+				706CF71C24AE1472001E73CE /* TaskService.swift in Sources */,
+				706CF72924AE1472001E73CE /* HttpClient.swift in Sources */,
+				706CF71D24AE1472001E73CE /* LocationService.swift in Sources */,
+				706CF71224AE1472001E73CE /* URL.swift in Sources */,
+				706CF72824AE1472001E73CE /* NetworkManager.swift in Sources */,
+				706CF71824AE1472001E73CE /* Consts.swift in Sources */,
+				706CF71E24AE1472001E73CE /* LogService.swift in Sources */,
+				706CF71F24AE1472001E73CE /* LocalStorageService.swift in Sources */,
+				706CF72324AE1472001E73CE /* Setting.swift in Sources */,
+				706CF72B24AE1472001E73CE /* Database.swift in Sources */,
+				706CF72024AE1472001E73CE /* SettingService.swift in Sources */,
+				706CF71624AE1472001E73CE /* Track.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +535,7 @@
 		};
 		706CF6CB24AE1378001E73CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE4D8AA807E28C5B243C78B2 /* Pods-Documents Framework.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -283,6 +560,7 @@
 		};
 		706CF6CC24AE1378001E73CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 513883529C71C82C2423B16D /* Pods-Documents Framework.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
