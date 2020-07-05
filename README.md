@@ -1,2 +1,2 @@
-# iOS Document Framework
-iOS Document Framework used in previous document managment projects
+# iOS Document Management Framework
+iOS Document Management Framework used in previous document managment projects
